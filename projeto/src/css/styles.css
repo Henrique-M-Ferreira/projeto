@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  background-color: white;
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 1%;
+
+  cursor: pointer;
+
+  padding: 5px;
+  transition: 0.3s;
+}
+
+.menu:hover {
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.35);
+}
+
+.menu.rotate {
+  animation-name: rotateCenter;
+  animation-duration: 0.1s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
+.menu.rotateReverse {
+  animation-name: rotateCenterReverse;
+  animation-duration: 0.1s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
+menu.rotated {
+  transform: rotate(90deg);
+}
+
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+
+  text-decoration: none;
+  color: black;
+
+  margin-left: 30%;
+  margin-right: 30%;
+  margin-bottom: 10px;
+  margin-top: 10px;
+
+  height: 70px;
+}
+
+
+
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 2%;
+
+  cursor: pointer;
+
+  padding: 5px;
+  transition: 0.3s;
+}
+
+.search:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.35);
+  border-radius: 50%;
+}
+
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 2%;
+
+  cursor: pointer;
+
+  padding: 5px;
+  transition: 0.3s;
+}
+
+.login:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.35);
+  border-radius: 50%;
+}
+
+body {
+  display: flex;
+  align-items: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  background: #000000;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.container{
+  background-color: white;
+  border-radius: 30px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.35);
+  position: relative;
+  overflow: hidden;
+  width: 768px;
+  max-width: 100%;
+  min-height: 480px;
+
+  margin-left: 25%;
+  margin-top: 50px;
+}

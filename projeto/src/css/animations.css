@@ -1,0 +1,23 @@
+@keyframes rotateCenter {
+  from {
+    transform: rotate(0deg);
+    transform-origin: center;
+  }
+
+  to {
+    transform: rotate(90deg);
+    transform-origin: center;
+  }
+}
+
+@keyframes rotateCenterReverse {
+  from {
+    transform: rotate(90deg);
+    transform-origin: center;
+  }
+
+  to {
+    transform: rotate(0deg);
+    transform-origin: center;
+  }
+}
