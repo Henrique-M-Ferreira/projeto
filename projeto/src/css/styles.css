@@ -9,6 +9,7 @@ header {
   background-color: white;
   display: flex;
   align-items: center;
+  text-align: center;
 }
 
 .menu {
@@ -31,19 +32,17 @@ header {
 .menu.rotate {
   animation-name: rotateCenter;
   animation-duration: 0.1s;
-  animation-timing-function: ease-out;
+  animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
+  border-radius: 0%;
+  box-shadow: none;
 }
 
 .menu.rotateReverse {
   animation-name: rotateCenterReverse;
   animation-duration: 0.1s;
-  animation-timing-function: ease-out;
+  animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
-}
-
-menu.rotated {
-  transform: rotate(90deg);
 }
 
 
@@ -56,15 +55,34 @@ menu.rotated {
   text-decoration: none;
   color: black;
 
-  margin-left: 30%;
-  margin-right: 30%;
-  margin-bottom: 10px;
-  margin-top: 10px;
-
   height: 70px;
+  margin-left: 80px;
 }
 
+.search-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
 
+  margin-top: 1px;
+  right: 110px;
+  z-index: 1;
+
+  visibility: hidden;
+  padding: 5px;
+  transition: 0.3s;
+
+  width: 0;
+  border: none;
+  border-bottom: 1px solid black;
+  outline: none;
+}
+
+.search-bar.visible {
+  visibility: visible;
+  width: 250px;
+}
 
 .search {
   display: flex;
@@ -76,11 +94,18 @@ menu.rotated {
 
   padding: 5px;
   transition: 0.3s;
+
+  z-index: 2;
 }
 
 .search:hover {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.35);
   border-radius: 50%;
+}
+
+.search.visible {
+  border-radius: 0;
+  box-shadow: none;
 }
 
 .login {
@@ -92,7 +117,7 @@ menu.rotated {
   cursor: pointer;
 
   padding: 5px;
-  transition: 0.3s;
+  transition: all 0.3s;
 }
 
 .login:hover {
@@ -100,28 +125,139 @@ menu.rotated {
   border-radius: 50%;
 }
 
+.login.fa-solid {
+  box-shadow: none;
+  border-radius: 0%;
+}
+
 body {
   display: flex;
   align-items: flex;
   justify-content: center;
   flex-direction: column;
-
-  background: #000000;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
 }
 
-.container{
-  background-color: white;
-  border-radius: 30px;
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.35);
-  position: relative;
-  overflow: hidden;
-  width: 768px;
-  max-width: 100%;
-  min-height: 480px;
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 
-  margin-left: 25%;
+.content-container {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+}
+
+.vector-left {
   margin-top: 50px;
+  margin-right: -400px;
+  z-index: 1;
+  position: relative;
+}
+
+.vector-right {
+  margin-top: 50px;
+  margin-left: -400px;
+  z-index: 1;
+}
+
+.vector-right.animate {
+  animation: slideRight 0.5s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+.vector-right.animate-reverse {
+  animation: slideLeft 0.5s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+.vector-left.mission.animate {
+  animation: slideAndRotateLeft 0.5s ease-in-out;  
+  animation-fill-mode: forwards;
+}
+
+.vector-right.mission.animate {
+  animation: slideAndRotateRight 0.5s ease-in-out;  
+  animation-fill-mode: forwards;
+}
+
+.container {
+  border-radius: 30px;
+  background-color: rgb(221, 221, 221);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.35);
+  overflow: hidden;
+  width: 850px;
+  min-height: 400px;
+  margin-top: 50px;
+  z-index: 2;
+}
+
+.heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-top: 20px;
+}
+
+.container-article {
+  font-size: 18px;
+  display: block;
+  justify-content: center;
+  padding: 20px;
+}
+
+.container-button {
+  background-color: brown;
+  color: white;
+  font-size: 12px;
+  padding: 10px 45px;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  margin: 0px auto;
+  display: block;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin-top: 120px;
+  cursor: pointer;
+  
+  transition: all 0.1s;
+}
+
+.container-button:hover {
+  background-color: white;
+  color: brown;
+  border: 2px solid brown;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  max-height: 30px;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.socials {
+  display: inline-block;
+  align-items: center;
+  margin-left: 700px;
+}
+
+.rights {
+  display: inline-block;
+  align-items: center;
+  margin-left: 440px;
+
+  font-size: 12px;
+}
+
+.social-icon {
+  margin-left: 10px;
 }
