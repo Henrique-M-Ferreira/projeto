@@ -8,62 +8,172 @@
 
     <link rel="stylesheet" href="src/css/styles.css" />
     <link rel="stylesheet" href="src/css/animations.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
     <header>
       <i class="fa-solid fa-bars menu" id="menu" title="Menu"></i>
-      <a class="title" href="index.html"> 
-        <h1> MAMA-ME NA GORDA GYM </h1>
+      <a class="title" href="index.html">
+        <h1>MAMA ME NA GORDA GYM</h1>
       </a>
-      <i class="fa-solid fa-magnifying-glass search" alt="Pesquisar" title="Pesquisar"></i>
-      <i class="fa-regular fa-user login" alt="Login" title="Login"></i>
+      <input class="search-bar" id="search-bar" type="text" />
+      <i
+        class="fa-solid fa-magnifying-glass search"
+        id="search"
+        alt="Pesquisar"
+        title="Pesquisar"
+      ></i>
+      <i
+        class="fa-regular fa-user login"
+        id="login"
+        alt="Login"
+        title="Login"
+      ></i>
     </header>
 
     <section class="content">
-      <div class="container">
-        <h2 class="mission-heading"> MISSAO E VALORES </h1>
-        <img class="mission-vector" src="assets/images/mission-vector.png">
-        <button class="container-button">
-          Saber Mais
-        </button>
+      <div class="content-container">
+        <img
+          class="vector-left mission"
+          id="vector-left"
+          src="assets/images/mission-vector.png"
+        />
+        <div class="container">
+          <h2 class="heading">MISSAO E VALORES</h2>
+          <article class="container-article">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim illum
+            ullam minima voluptatum harum soluta quo, modi nesciunt tenetur
+            adipisci maiores corrupti explicabo laborum repudiandae excepturi,
+            nostrum eum placeat laboriosam. Lorem ipsum dolor sit amet,
+            consectetur adipisicing elit. Exercitationem, voluptas? Dolore,
+            voluptates culpa perspiciatis optio sequi saepe vero esse aspernatur
+            laudantium dicta ea quod doloremque beatae possimus assumenda.
+            Recusandae, provident! Lorem ipsum dolor sit, amet consectetur
+            adipisicing elit. Voluptate ipsa maxime quasi quas id fugit animi
+            eaque. Eos impedit labore ipsam nesciunt consequuntur laborum
+            commodi. Natus officiis ex tempora accusamus.
+          </article>
+          <button class="container-button" id="container-button">Saber Mais</button>
+        </div>
+        <img
+          class="vector-right mission"
+          id="vector-right"
+          src="assets/images/mission-vector.png"
+        />
       </div>
-  
-      <div class="container">
-        <h2 class="staff-heading"> A NOSSA EQUIPA </h2>
-        <img class="staff-heading" src="assets/images/staff-vector.png">
-        <button class="container-button">
-          Saber Mais
-        </button>
+
+      <div class="content-container">
+        <img
+          class="vector-left"
+          id="vector-left"
+          src="assets/images/staff-vector.png"
+        />
+        <div class="container">
+          <h2 class="heading">A NOSSA EQUIPA</h2>
+          <article class="container-article">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim illum
+            ullam minima voluptatum harum soluta quo, modi nesciunt tenetur
+            adipisci maiores corrupti explicabo laborum repudiandae excepturi,
+            nostrum eum placeat laboriosam. Lorem ipsum dolor sit amet,
+            consectetur adipisicing elit. Exercitationem, voluptas? Dolore,
+            voluptates culpa perspiciatis optio sequi saepe vero esse aspernatur
+            laudantium dicta ea quod doloremque beatae possimus assumenda.
+            Recusandae, provident! Lorem ipsum dolor sit, amet consectetur
+            adipisicing elit. Voluptate ipsa maxime quasi quas id fugit animi
+            eaque. Eos impedit labore ipsam nesciunt consequuntur laborum
+            commodi. Natus officiis ex tempora accusamus.
+          </article>
+          <button class="container-button" id="container-button">Saber Mais</button>
+        </div>
+        <img
+          class="vector-right"
+          id="vector-right"
+          src="assets/images/staff-vector.png"
+        />
       </div>
-  
-      <div class="container">
-        <h2 class="equipments-heading"> OS NOSSOS EQUIPAMENTOS </h2>
-        <img src="assets/images/equipments-vector.png">
-        <button class="container-button">
-          Saber Mais
-        </button>
+
+      <div class="content-container">
+        <img
+          class="vector-left"
+          id="vector-left"
+          src="assets/images/equipments-vector.png"
+        />
+        <div class="container">
+          <h2 class="heading">OS NOSSOS EQUIPAMENTOS</h2>
+          <article class="container-article">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim illum
+            ullam minima voluptatum harum soluta quo, modi nesciunt tenetur
+            adipisci maiores corrupti explicabo laborum repudiandae excepturi,
+            nostrum eum placeat laboriosam. Lorem ipsum dolor sit amet,
+            consectetur adipisicing elit. Exercitationem, voluptas? Dolore,
+            voluptates culpa perspiciatis optio sequi saepe vero esse aspernatur
+            laudantium dicta ea quod doloremque beatae possimus assumenda.
+            Recusandae, provident! Lorem ipsum dolor sit, amet consectetur
+            adipisicing elit. Voluptate ipsa maxime quasi quas id fugit animi
+            eaque. Eos impedit labore ipsam nesciunt consequuntur laborum
+            commodi. Natus officiis ex tempora accusamus.
+          </article>
+          <button class="container-button" id="container-button">Saber Mais</button>
+        </div>
+        <img
+          class="vector-right"
+          id="vector-right"
+          src="assets/images/equipments-vector.png"
+        />
       </div>
-  
-      <div class="container">
-        <h2 class="training-heading"> TREINOS PERSONALIZADOS </h2>
-        <img class="training-vector" src="assets/images/training-vector.png">
-        <button class="container-button">
-          Saber Mais
-        </button>
+
+      <div class="content-container">
+        <img
+          class="vector-left"
+          id="vector-left"
+          src="assets/images/training-vector-left.png"
+        />
+        <div class="container">
+          <h2 class="heading">TREINOS PERSONALIZADOS</h2>
+          <article class="container-article">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim illum
+            ullam minima voluptatum harum soluta quo, modi nesciunt tenetur
+            adipisci maiores corrupti explicabo laborum repudiandae excepturi,
+            nostrum eum placeat laboriosam. Lorem ipsum dolor sit amet,
+            consectetur adipisicing elit. Exercitationem, voluptas? Dolore,
+            voluptates culpa perspiciatis optio sequi saepe vero esse aspernatur
+            laudantium dicta ea quod doloremque beatae possimus assumenda.
+            Recusandae, provident! Lorem ipsum dolor sit, amet consectetur
+            adipisicing elit. Voluptate ipsa maxime quasi quas id fugit animi
+            eaque. Eos impedit labore ipsam nesciunt consequuntur laborum
+            commodi. Natus officiis ex tempora accusamus.
+          </article>
+          <button class="container-button" id="container-button">Saber Mais</button>
+        </div>
+        <img
+          class="vector-right"
+          id="vector-right"
+          src="assets/images/training-vector-right.png"
+        />
       </div>
     </section>
 
     <footer>
-      <i class="fa-brands fa-instagram"></i>
-      <i class="fa-brands fa-x-twitter"></i>
-      <i class="fa-brands fa-facebook"></i>
-      <span>Mama-me na Gorda Gym &#183; All Rights Reserved &#169;</span>
+      <div class="socials">
+        <i class="fa-brands fa-instagram social-icon"></i>
+        <i class="fa-brands fa-x-twitter social-icon"></i>
+        <i class="fa-brands fa-facebook social-icon"></i>
+        <i class="fa-brands fa-tiktok social-icon"></i>
+        <span class="rights"
+          >Mama-me na Gorda Gym &#183; All Rights Reserved &#169;</span
+        >
+      </div>
     </footer>
 
     <script src="src/js/main.js"></script>
