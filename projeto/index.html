@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-pt">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Projeto</title>
 
-    <link rel="stylesheet" href="src/css/styles.css" />
+    <link rel="stylesheet" href="src/css/index-styles.css" />
     <link rel="stylesheet" href="src/css/animations.css" />
     <link
       rel="stylesheet"
@@ -23,7 +23,7 @@
 
   <body>
     <header>
-      <i class="fa-solid fa-bars menu" id="menu" title="Menu"></i>
+      <i class="fa-solid fa-bars menu" id="menu" title="Menu" onclick="openNavLeft()"></i>
       <a class="title" href="index.html">
         <h1>MAMA ME NA GORDA GYM</h1>
       </a>
@@ -42,11 +42,24 @@
       ></i>
     </header>
 
-    <section class="content">
+    <div id="sidebar-left" class="sidebar left">
+      <a href="index.html">Home</a>
+      <a href="index.html">Missao</a>
+      <a href="index.html">Equipa</a>
+      <a href="index.html">Equipamentos</a>
+      <a href="index.html">Treinos</a>
+    </div>
+
+    <div id="sidebar-right" class="sidebar right">
+      <a href="index.html">Entrar</a>
+      <a href="index.html">Cadastrar</a>
+    </div>
+
+    <div class="content">
       <div class="content-container">
         <img
           class="vector-left mission"
-          id="vector-left"
+          id="vector-uq-1"
           src="assets/images/mission-vector.png"
         />
         <div class="container">
@@ -64,11 +77,11 @@
             eaque. Eos impedit labore ipsam nesciunt consequuntur laborum
             commodi. Natus officiis ex tempora accusamus.
           </article>
-          <button class="container-button" id="container-button">Saber Mais</button>
+          <button class="button-uq" id="button-uq">Saber Mais</button>
         </div>
         <img
           class="vector-right mission"
-          id="vector-right"
+          id="vector-uq-2"
           src="assets/images/mission-vector.png"
         />
       </div>
@@ -76,7 +89,7 @@
       <div class="content-container">
         <img
           class="vector-left"
-          id="vector-left"
+          id="vector-left-1"
           src="assets/images/staff-vector.png"
         />
         <div class="container">
@@ -98,7 +111,7 @@
         </div>
         <img
           class="vector-right"
-          id="vector-right"
+          id="vector-right-1"
           src="assets/images/staff-vector.png"
         />
       </div>
@@ -106,7 +119,7 @@
       <div class="content-container">
         <img
           class="vector-left"
-          id="vector-left"
+          id="vector-left-2"
           src="assets/images/equipments-vector.png"
         />
         <div class="container">
@@ -128,7 +141,7 @@
         </div>
         <img
           class="vector-right"
-          id="vector-right"
+          id="vector-right-2"
           src="assets/images/equipments-vector.png"
         />
       </div>
@@ -136,7 +149,7 @@
       <div class="content-container">
         <img
           class="vector-left"
-          id="vector-left"
+          id="vector-left-3"
           src="assets/images/training-vector-left.png"
         />
         <div class="container">
@@ -158,11 +171,11 @@
         </div>
         <img
           class="vector-right"
-          id="vector-right"
+          id="vector-right-3"
           src="assets/images/training-vector-right.png"
         />
       </div>
-    </section>
+    </div>
 
     <footer>
       <div class="socials">
